@@ -5,14 +5,14 @@ const messages = [
   "Apply for jobs 💼",
   "Invest your new income 🤑"
 ];
-// useState(1) = 1 is the default value
+  // useState(1) = 1 is the default value
 export default function App() {
   const [step, setStep] = useState(1)
-  //useState is a React hook due to the keyword use
+  // useState is a React hook due to the keyword use
   function handlePrevious() {
     if (step > 1) setStep(step - 1);
   }
-
+  
   function handleNext() {
     if (step < 3) setStep(step + 1);
   }
